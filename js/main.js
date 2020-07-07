@@ -1,5 +1,45 @@
-var d = new Date();
-alert(d);
+function button(){
+    //alert("Obrigado por clicar");
+    document.getElementById("agradecimento").innerHTML = "Obrigado por clicar";
+    console.log(document.getElementById("agradecimento"));
+}
+
+function redirecionar(){
+    window.open("https://globallab.org/en/");
+    //window.location.href = "https://globallab.org/en/";
+}
+
+function trocar(){
+    document.getElementById("trocar").innerHTML = "Obrigado por clicar aqui";
+    //alert("Trocar texto");
+}
+
+function load(){
+    alert("Página carregada");
+}
+
+function funcaochange(elemento){
+    console.log(elemento.value);
+}
+
+/*function soma(n1, n2){
+    return n1 + n2;
+}
+alert(soma(5,10));
+
+function validaIdade(idade){
+    var validar;
+    if(idade >= 18){
+        validar = true;
+    }
+    else{
+        validar = false;
+    }
+}
+var idade = prompt("Qual a sua idade?");
+console.log(validaIdade(idade));
+/*var d = new Date();
+alert(d);*/
 /*var count;
 for(count = 0; count <= 5; count++){
     alert(count);
